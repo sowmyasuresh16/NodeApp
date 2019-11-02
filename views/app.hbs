@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+{{!-- Body of html begins here --}}
+<body style="background-color:lightgray">
+    <h3>Node app has been deployed in heroku!!</h3>
+    <div style="font-weight: bold;">
+        Displaying the Departments Json.
+    </div>
+    {{!-- Iterating and listing values from departments json --}}
+    <ul>
+        {{#each data}}
+        <li>Department Number : {{this.dept_no}},
+            Department Name : {{this.dept_name}}
+        </li>
+        {{/each}}
+    </ul>
+</body>
+{{!-- Body of html ends here --}}
+</html>
